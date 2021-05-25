@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+/* font-family: 'Comfortaa', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    font-size: medium;
+    font-style: normal;
+    font-weight: normal;
+    color: #212121;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.navbar-catbot,
+.navbar-catbot-left,
+.navbar-catbot-right {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.navbar-catbot {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 3rem;
+    padding-top: 1.5rem;
+}
+
+.navbar-catbot-left {
+    display: flex;
+}
+
+.text-logo-catbot {
+    display: flex;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    font-size: 32px;
+    text-align: justify;
+    color: #212121;
+    border-right: solid 2px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-catbot-menu {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-commands,
+.menu-contact {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #424242;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-commands {
+    display: flex;
+    padding-right: .5rem;
+    margin-right: .25rem;
+}
+
+.menu-contact {
+    display: flex;
+    padding-left: .5rem;
+    margin-left: .25rem;
+}
+
+.navbar-right-catbot {
+    display: flex;
+}
+
+.navbar-catbot-user {
+    display: flex;
+}
+
+.user-box {
+    padding: .5rem;
+    margin: 0 .5rem;
+    width: 96px;
+    height: 32px;
+    background: #212121;
+    border: 2px solid #E5E5E5;
+    box-shadow: 5px 5px 3px #000000;
+    border-radius: 5px;
+}
+
+.user-box:first-child {
+    margin-left: 0;
+}
+
+.user-box:last-child {
+    margin-right: 0;
+}
+
+.user-login,
+.user-register {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    color: #FDFEFE;
+}
+
+.user-login {}
+
+.user-register {}
+
+/* Footer */

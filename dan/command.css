@@ -1,0 +1,21 @@
+.box{
+    border: 3px solid black;
+    margin: 15px auto;
+    background-color: #f2f7f5;
+    width: 1024px;
+    height: 200px;
+    padding: 0.75rem;
+    box-shadow: 0.6rem 0.6rem 0 #222;
+    border-radius: 5px;
+}
+
+.cmd{
+    border: 3px solid black;
+    margin: 0 auto;
+    background-color: #f2f7f5;
+    width: 1024px;
+    height: 400px;
+    padding: 0.75rem;
+    box-shadow: 0.6rem 0.6rem 0 #222;
+    border-radius: 5px;
+}

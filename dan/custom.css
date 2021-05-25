@@ -1,4 +1,4 @@
-.box{
+.box {
     border: 3px solid black;
     margin: 15px auto;
     background-color: #f2f7f5;
@@ -9,7 +9,7 @@
     border-radius: 5px;
 }
 
-.cmd{
+.cmd {
     border: 3px solid black;
     margin: 0 auto;
     background-color: #f2f7f5;

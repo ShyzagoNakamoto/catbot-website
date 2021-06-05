@@ -122,6 +122,20 @@ a {
 
 .user-register {}
 
+/* HomePage */
+
+.h1-kiri{
+
+}
+
+.index-img{
+    width: auto;
+    height: 96px;
+}
+
+.h1-kanan{
+
+}
 /* Commands */
 .container {
     margin: 0 auto;

@@ -68,7 +68,7 @@
                 <button type="submit" name="register">Register</button>
             </form>
         </div>
-    </div>ƒ
+    </div>
 
     <footer>
         <p class="footer-catbot">&copy; Copyright CatBot <strong>2021</strong>.</p>

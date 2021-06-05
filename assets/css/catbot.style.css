@@ -344,16 +344,3 @@ a {
     font-size: 1.125rem;
     text-decoration: none;
 }
-
-/* Footer */
-footer {
-    position: absolute;
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 3rem;
-    bottom: 0px;
-}
-
-.footer-catbot {
-    text-align: center;
-}

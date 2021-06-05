@@ -1,4 +1,5 @@
 <?php
+// Ini Buat Database
 $db_hostname = "172.96.191.25";
 $db_username = "ucweb2_catbot";
 $db_password = "CatBot123";

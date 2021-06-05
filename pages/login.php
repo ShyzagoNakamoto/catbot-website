@@ -1,3 +1,7 @@
+<?php
+    include_once("../includes/catLogin.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,7 +55,9 @@
 
     <div class="container">
         <div class="box login-pages">
-            <form action="../includes/catLogin.php" method="post">
+            <img src="../assets/images/logoCatBot.png">
+            <h1>Login</h1>
+            <form action="../includes/catLogin.php" method="post" class="">
                 <label for="username">Username</label>
                 <input class="input-form-username" type="text" name="username" id="username" placeholder="catbot"
                     required>

@@ -35,39 +35,19 @@
 <body>
     <nav class="navbar-catbot">
         <div class="navbar-catbot-left">
-            <a class="text-logo-catbot" href="">CatBot</a>
+            <a class="text-logo-catbot" href="/">CatBot</a>
             <div class="navbar-catbot-menu">
-                <a class="menu-commands" href="http://localhost/Main/commands/">Commands</a>
-                <a class="menu-contact" href="http://localhost/Main/contact/">Contact</a>
+                <a class="menu-commands" href="/commands">Commands</a>
+                <a class="menu-contact" href="/contact">Contact</a>
             </div>
         </div>
         <div class="navbar-catbot-right">
             <div class="navbar-catbot-user">
-                <a class="user-box user-login" href="">Login</a>
-                <a class="user-box user-register" href="">Register</a>
+                <a class="user-box user-login" href="/login">Login</a>
+                <a class="user-box user-register" href="/register">Register</a>
             </div>
         </div>
     </nav>
-
-    <div class="container">
-        <div class="box column-socialmedia">
-            <h1>Social Media</h1>
-            <img src="../assets/images/ig.png">
-            <img src="../assets/images/twitter.png">
-            <img src="../assets/images/fb.png">
-        </div>
-
-        <div class="box column-cp">
-            <h1>Contact Person</h1>
-            <img src="../assets/images/mail.png">
-            <img src="../assets/images/phone.png">
-        </div>
-
-        <div class="box column-logo">
-            <img src="../assets/images/logoCatBot.png">
-        </div>
-    </div>
-
 </body>
 
 </html>

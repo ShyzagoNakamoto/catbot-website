@@ -1,3 +1,5 @@
+<?php include_once("../includes/catDatabase.php") ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,55 +37,52 @@
 <body>
     <nav class="navbar-catbot">
         <div class="navbar-catbot-left">
-            <a class="text-logo-catbot" href="">CatBot</a>
+            <a class="text-logo-catbot" href="/">CatBot</a>
             <div class="navbar-catbot-menu">
-                <a class="menu-commands" href="http://localhost/Main/commands/">Commands</a>
-                <a class="menu-contact" href="http://localhost/Main/contact/">Contact</a>
+                <a class="menu-commands" href="/commands">Commands</a>
+                <a class="menu-contact" href="/contact">Contact</a>
             </div>
         </div>
         <div class="navbar-catbot-right">
             <div class="navbar-catbot-user">
-                <a class="user-box user-login" href="">Login</a>
-                <a class="user-box user-register" href="">Register</a>
+                <a class="user-box user-login" href="/login">Login</a>
+                <a class="user-box user-register" href="/register">Register</a>
             </div>
         </div>
     </nav>
 
-    <?php
-        include_once("../includes/catDatabase.php")
-    ?>
     <div class="container">
         <div class="box column-prefix">
             <h1>Prefix</h1>
             <?php
-                $sql = "SELECT * FROM catusage;";
-                $result = mysqli_query($conn, $sql);
-                
-                if ($row = mysqli_fetch_assoc($result)) {
-                    echo "Default prefix dari CatBot adalah " . $row['prefix'] ."<br>" . " Anda bisa memulai sebuah command pada bot dengan menggunakan awalan ". $row['prefix']. "(command)" . "<br><br><br>" . "Anda dapat mengubah prefix pada "."Dashboard". " dan memulai command dengan prefix apapun yang anda tentukan.<br><br>";
-                }
+            $sql = "SELECT * FROM catUsages;";
+            $result = mysqli_query($connect, $sql);
+            $row = mysqli_fetch_assoc($result);
             ?>
+            <p>
+                Secara umum, Prefix dari CatBot ini <code class="catbot-prefix"><?php echo $row['prefix'] ?></code> atau
+                <code class="catbot-prefix">@CatBot</code>. Kalian dapat Memulai sebuah Perintah dengan awalan Prefix
+                <code class="catbot-prefix"><?php echo $row['prefix'] ?></code> atau <code
+                    class="catbot-prefix">@CatBot</code> dilanjutkan dengan nama Perintah.
+            </p>
         </div>
 
         <div class="box column-commands">
             <h1>Commands</h1>
             <?php
-                $sql = "SELECT * FROM catusage;";
-                $result = mysqli_query($conn, $sql);
-                $resultCheck = mysqli_num_rows($result);
+            $sql = "SELECT * FROM catUsages;";
+            $result = mysqli_query($connect, $sql);
+            $resultCheck = mysqli_num_rows($result);
 
-                if ($resultCheck > -1) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        if ($row = mysqli_fetch_assoc($result)) {
-                            echo '<b>' . $row['command'] . '</b>' . '<hr><br>';
-                        }
-                        echo $row['description'] . '<br><br>';
-                    }
+            if ($resultCheck > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo '<b>' . $row['command'] . '</b>' . '<hr><br>';
+                    echo $row['description'] . '<br><br>';
                 }
+            }
             ?>
         </div>
     </div>
-
 </body>
 
 </html>

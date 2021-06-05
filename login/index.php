@@ -1,3 +1,7 @@
+<?php
+include_once("../includes/catLogin.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,25 +39,39 @@
 <body>
     <nav class="navbar-catbot">
         <div class="navbar-catbot-left">
-            <a class="text-logo-catbot" href="">CatBot</a>
+            <a class="text-logo-catbot" href="/">CatBot</a>
             <div class="navbar-catbot-menu">
-                <a class="menu-commands" href="http://localhost/Main/commands/">Commands</a>
-                <a class="menu-contact" href="http://localhost/Main/contact/">Contact</a>
+                <a class="menu-commands" href="/commands">Commands</a>
+                <a class="menu-contact" href="/contact">Contact</a>
             </div>
         </div>
         <div class="navbar-catbot-right">
             <div class="navbar-catbot-user">
-                <a class="user-box user-login" href="">Login</a>
-                <a class="user-box user-register" href="">Register</a>
+                <a class="user-box user-login" href="/login">Login</a>
+                <a class="user-box user-register" href="/register">Register</a>
             </div>
         </div>
     </nav>
 
-
-
-    <footer>
-        <p class="footer-catbot">&copy; Copyright CatBot <strong>2021</strong>.</p>
-    </footer>
+    <div class="container">
+        <div class="box login-pages">
+            <img src="../assets/images/logoCatBot.png">
+            <h3 class="text-login-pages">Login</h3>
+            <form action="../includes/catLogin.php" method="post">
+                <div class="form-login">
+                    <label class="label-login" for="username">Username</label>
+                    <input class="input-login" type="text" name="username" id="username" required>
+                </div>
+                <div class="form-login">
+                    <label class="label-login" for="password">Password</label>
+                    <input class="input-login" type="password" name="password" id="password" required>
+                </div>
+                <div class="form-button-login">
+                    <button class="button-login" type="submit" name="masuk">Go</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

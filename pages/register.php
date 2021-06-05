@@ -49,22 +49,25 @@
         </div>
     </nav>
 
-    <div class="login-box">
-        <form action="../includes/catRegister.php" method="post">
-            <label for="fName">First Name</label>
-            <input type="text" name="fName" id="fName" placeholder="John">
-            <label for="lName">Last Name</label>
-            <input type="text" name="lName" id="lName" placeholder="Doe">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="johndoe@email.com" required>
-            <label for="username">Username</label>
-            <input class="input-register-form" type="text" name="username" id="username" placeholder="johndoe" required>
-            <label for="password">Password</label>
-            <input class="input-register-form" type="password" name="password" id="password" required>
-            <label for="repeatPassword">Repeat Password</label>
-            <input class="input-register-form" type="password" name="repeatPassword" id="repeatPassword" required>
-            <button type="submit" name="register">Register</button>
-        </form>
+    <div class="container">
+        <div class="box register-pages">
+            <form action="../includes/catRegister.php" method="post">
+                <label for="fName">First Name</label>
+                <input type="text" name="fName" id="fName" placeholder="John">
+                <label for="lName">Last Name</label>
+                <input type="text" name="lName" id="lName" placeholder="Doe">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@email.com" required>
+                <label for="username">Username</label>
+                <input class="input-register-form" type="text" name="username" id="username" placeholder="johndoe"
+                    required>
+                <label for="password">Password</label>
+                <input class="input-register-form" type="password" name="password" id="password" required>
+                <label for="repeatPassword">Repeat Password</label>
+                <input class="input-register-form" type="password" name="repeatPassword" id="repeatPassword" required>
+                <button type="submit" name="register">Register</button>
+            </form>
+        </div>
     </div>
 
     <footer>

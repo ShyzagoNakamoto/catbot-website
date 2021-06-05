@@ -43,8 +43,8 @@
         </div>
         <div class="navbar-catbot-right">
             <div class="navbar-catbot-user">
-                <a class="user-box user-login" href="">Login</a>
-                <a class="user-box user-register" href="">Register</a>
+                <a class="user-box user-login" href="/pages/login.php">Login</a>
+                <a class="user-box user-register" href="/pages/register.php">Register</a>
             </div>
         </div>
     </nav>

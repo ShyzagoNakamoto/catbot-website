@@ -25,14 +25,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link href="assets/css/catbot.style.css" rel="stylesheet">
     <link href="assets/css/catbot.mobile.css" rel="stylesheet">
-    <link href="assets/css/catbot.signin.css" rel="stylesheet">
-    <link href="assets/css/catbot.signup.css" rel="stylesheet">
-    <link href="/assets/css/fonts/comfortaa/Comfortaa-VariableFont_wght.ttf" rel="stylesheet">
-    <link href="/assets/css/fonts/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/fonts/comfortaa/Comfortaa-VariableFont_wght.ttf" rel="stylesheet">
 
     <!-- JS -->
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/fontawesome/all.min.js"></script>
     <script src="assets/js/jquery/jquery.min.js"></script>
 </head>
 
@@ -41,8 +37,8 @@
         <div class="navbar-catbot-left">
             <a class="text-logo-catbot" href="">CatBot</a>
             <div class="navbar-catbot-menu">
-                <a class="menu-commands" href="http://">Commands</a>
-                <a class="menu-contact" href="http://">Contact</a>
+                <a class="menu-commands" href="http://localhost/Main/commands/">Commands</a>
+                <a class="menu-contact" href="http://localhost/Main/contact/">Contact</a>
             </div>
         </div>
         <div class="navbar-catbot-right">

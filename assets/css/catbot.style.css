@@ -9,8 +9,7 @@
 
 body {
     font-family: 'Comfortaa', cursive;
-    font-size: medium;
-    font-style: normal;
+    font-size: 1em;
     font-weight: normal;
     color: #212121;
 }
@@ -123,4 +122,47 @@ a {
 
 .user-register {}
 
+/* Commands */
+.container {
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 1344px;
+}
+
+.box {
+    margin: 2rem 0;
+    padding: .5rem;
+    background: #F2F7F5;
+    border: 3px solid #212121;
+    box-shadow: 5px 5px 3px #000000;
+    border-radius: 5px;
+}
+
+.column-prefix {
+    color: #212121;
+    width: auto;
+    height: 100%;
+    display: flex;
+}
+
+.column-commands {
+    color: #212121;
+    width: auto;
+    height: 100%;
+    display: flex;
+}
+
+/* Login */
+.login-pages {}
+
 /* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 3rem;
+}
+
+.footer-catbot {
+    text-align: center;
+}

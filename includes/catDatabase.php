@@ -1,8 +1,8 @@
 <?php
-$db_hostname = "localhost";
-$db_username = "catbot";
-$db_password = "Alphab3tJ191201~";
-$db_database = "website_programming";
+$db_hostname = "172.96.191.25";
+$db_username = "ucweb2_catbot";
+$db_password = "CatBot123";
+$db_database = "ucweb2_catbot";
 
 try {
     $conn = new PDO("mysql:host=$db_hostname;dbname=$db_database", $db_username, $db_password);

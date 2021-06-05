@@ -124,7 +124,6 @@ a {
 
 /* HomePage */
 
-<<<<<<< HEAD
 .h1-kiri{
     position: absolute;
     width: 512px;
@@ -143,18 +142,11 @@ a {
 .index-img{
     position: absolute;
     width: 96px;
-=======
-.h1-kiri {}
-
-.index-img {
-    width: auto;
->>>>>>> 9cfb3d08fe850e3ebe76a10fbe9c1987318a9276
     height: 96px;
     left: 712px;
     top: 310px;
 }
 
-<<<<<<< HEAD
 .h1-kanan{
     position: absolute;
     width: 512px;
@@ -169,10 +161,6 @@ a {
     align-items: center;
     text-align: right;
 }
-=======
-.h1-kanan {}
-
->>>>>>> 9cfb3d08fe850e3ebe76a10fbe9c1987318a9276
 /* Commands */
 .container {
     margin: 0 auto;

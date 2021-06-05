@@ -49,13 +49,38 @@
         </div>
     </nav>
 
+    <?php
+        include_once("../includes/catDatabase.php")
+    ?>
     <div class="container">
         <div class="box column-prefix">
             <h1>Prefix</h1>
+            <?php
+                $sql = "SELECT * FROM catusage;";
+                $result = mysqli_query($conn, $sql);
+                
+                if ($row = mysqli_fetch_assoc($result)) {
+                    echo "Default prefix dari CatBot adalah " . $row['prefix'] ."<br>" . " Anda bisa memulai sebuah command pada bot dengan menggunakan awalan ". $row['prefix']. "(command)" . "<br><br><br>" . "Anda dapat mengubah prefix pada "."Dashboard". " dan memulai command dengan prefix apapun yang anda tentukan.<br><br>";
+                }
+            ?>
         </div>
 
         <div class="box column-commands">
             <h1>Commands</h1>
+            <?php
+                $sql = "SELECT * FROM catusage;";
+                $result = mysqli_query($conn, $sql);
+                $resultCheck = mysqli_num_rows($result);
+
+                if ($resultCheck > -1) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if ($row = mysqli_fetch_assoc($result)) {
+                            echo '<b>' . $row['command'] . '</b>' . '<hr><br>';
+                        }
+                        echo $row['description'] . '<br><br>';
+                    }
+                }
+            ?>
         </div>
     </div>
 

@@ -57,13 +57,12 @@
         <div class="box login-pages">
             <img src="../assets/images/logoCatBot.png">
             <h1>Login</h1>
-            <form action="../includes/catLogin.php" method="post" class="">
-                <label for="username">Username</label>
-                <input class="input-form-username" type="text" name="username" id="username" placeholder="catbot"
-                    required>
-                <label for="password">Password</label>
-                <input class="input-form-password" type="text" name="password" id="password" required>
-                <button type="submit" name="masuk">Go</button>
+            <form action="../includes/catLogin.php" method="post">
+                <label class="label-login" for="username">Username</label>
+                <input class="input-form-username" type="text" name="username" id="username" required>
+                <label class="label-login" for="password">Password</label>
+                <input class="input-form-password" type="password" name="password" id="password" required>
+                <button class="button-login" type="submit" name="masuk">Go</button>
             </form>
         </div>
     </div>

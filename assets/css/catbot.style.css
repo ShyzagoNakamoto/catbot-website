@@ -167,6 +167,7 @@ a {
     width: auto;
     height: 96px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .login-pages h1{
@@ -175,7 +176,67 @@ a {
 }
 
 .login-pages form{
+    margin-top: 40px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+}
 
+.input-form-username{
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.2s ease 0s;
+    outline: currentcolor none medium;
+    appearance: none;
+    font-size: 1rem;
+    height: 2.5rem;
+    border-radius: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background-color: transparent;
+    width: 600px;
+}
+
+.input-form-password{
+    width: 600px;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.2s ease 0s;
+    outline: currentcolor none medium;
+    appearance: none;
+    font-size: 1rem;
+    height: 2.5rem;
+    border-radius: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background-color: transparent;
+}
+
+.button-login{
+    width: 128px;
+    height: 48px;
+    color: white;
+    background: #212121;
+    border: 2px solid #E5E5E5;
+    box-shadow: 5px 5px 3px #000000;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 450px;
+}
+
+.label-login{
+    font-size: 24px;
+    margin-top: 20px;
 }
 
 /* Footer */

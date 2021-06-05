@@ -49,11 +49,25 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="box column-socialmedia">
+            <h1>Social Media</h1>
+            <img src="../assets/images/ig.png">
+            <img src="../assets/images/twitter.png">
+            <img src="../assets/images/fb.png">
+        </div>
 
+        <div class="box column-cp">
+            <h1>Contact Person</h1>
+            <img src="../assets/images/mail.png">
+            <img src="../assets/images/phone.png">
+        </div>
 
-    <footer>
-        <p class="footer-catbot">&copy; Copyright CatBot <strong>2021</strong>.</p>
-    </footer>
+        <div class="box column-logo">
+            <img src="../assets/images/logoCatBot.png">
+        </div>
+    </div>
+
 </body>
 
 </html>

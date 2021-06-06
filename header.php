@@ -28,14 +28,14 @@
     <link href="assets/css/fonts/comfortaa/Comfortaa-VariableFont_wght.ttf" rel="stylesheet">
 
     <!-- JS -->
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js" defer></script>
     <script src="assets/js/jquery/jquery.min.js"></script>
 </head>
 
 <body>
     <nav class="navbar-catbot">
+        <a class="text-logo-catbot" href="/">CatBot</a>
         <div class="navbar-catbot-left">
-            <a class="text-logo-catbot" href="/">CatBot</a>
             <div class="navbar-catbot-menu">
                 <a class="menu-commands" href="/commands">Commands</a>
                 <a class="menu-contact" href="/contact">Contact</a>
@@ -47,4 +47,9 @@
                 <a class="user-box user-register" href="/register">Register</a>
             </div>
         </div>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>

@@ -39,6 +39,48 @@ a {
 }
 
 /* Header */
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #212121;
+    border-radius: .5rem;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+}
+
+.hamburger .is-active span:nth-child(1) {
+    transform: translate(0px, 2px) rotate(45deg);
+}
+
+.hamburger .is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px)
+}
+
+.hamburger .is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
 .navbar-catbot,
 .navbar-catbot-left,
 .navbar-catbot-right {
@@ -50,17 +92,19 @@ a {
     display: flex;
 }
 
+.navbar-catbot-left,
+.navbar-catbot-right {
+    display: none;
+}
+
 .navbar-catbot {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     margin: auto 3rem;
     padding-top: 1.5rem;
-}
-
-.navbar-catbot-left {
-    display: flex;
 }
 
 .text-logo-catbot {

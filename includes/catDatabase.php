@@ -6,11 +6,6 @@ $db_database = "website_programming";
 
 $connect = mysqli_connect($db_hostname, $db_username, $db_password, $db_database);
 
-// try {
-//     $conn = new PDO("mysql:host=$db_hostname;dbname=$db_database", $db_username, $db_password);
-//     // set the PDO error mode to exception
-//     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//     echo "Connected successfully";
-// } catch (PDOException $e) {
-//     echo "Connection failed: " . $e->getMessage();
-// }
+if (!$connect) {
+    echo "Connection failed!";
+}

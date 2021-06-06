@@ -54,23 +54,22 @@
             <img src="../assets/images/logoCatBot.png" alt="">
             <h3 class="text-register-pages">Register</h1>
                 <form action="../includes/catRegister.php" method="post">
+                    <?php if (isset($_GET['error'])) { ?>
+                    <p class="error"><?php echo $_GET['error']; ?></p>
+                    <?php } ?>
+
+                    <?php if (isset($_GET['success'])) { ?>
+                    <p class="success"><?php echo $_GET['success']; ?></p>
+                    <?php } ?>
                     <div class="form-register">
-                        <label class="label-register" for="fName">First Name</label>
-                        <input class="input-register" type="text" name="fName" id="fName" placeholder="John">
-                    </div>
-                    <div class="form-register">
-                        <label class="label-register" for="lName">Last Name</label>
-                        <input class="input-register" type="text" name="lName" id="lName" placeholder="Doe">
+                        <label class="label-register" for="username">Username</label>
+                        <input class="input-register" type="text" name="username" id="username" placeholder="catbot"
+                            value="<?php echo $_GET['username']; ?>" required>
                     </div>
                     <div class="form-register">
                         <label class="label-register" for="email">Email</label>
                         <input class="input-register" type="email" name="email" id="email"
-                            placeholder="johndoe@email.com" required>
-                    </div>
-                    <div class="form-register">
-                        <label class="label-register" for="username">Username</label>
-                        <input class="input-register" type="text" name="username" id="username" placeholder="johndoe"
-                            required>
+                            placeholder="catbot@email.com" value="<?php echo $_GET['email']; ?>" required>
                     </div>
                     <div class="form-register">
                         <label class="label-register" for="password">Password</label>

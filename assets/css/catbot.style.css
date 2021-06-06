@@ -92,11 +92,6 @@ a {
     display: flex;
 }
 
-.navbar-catbot-left,
-.navbar-catbot-right {
-    display: none;
-}
-
 .navbar-catbot {
     display: flex;
     align-items: center;

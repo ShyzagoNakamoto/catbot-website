@@ -47,9 +47,4 @@
                 <a class="user-box user-register" href="/register">Register</a>
             </div>
         </div>
-        <button class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
     </nav>

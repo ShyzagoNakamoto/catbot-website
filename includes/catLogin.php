@@ -15,15 +15,11 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = validate($_POST['username']);
     $password = validate($_POST['password']);
 
-    if (empty($username)) {
-        header("Location: index.php?error=User Name is required");
-        exit();
-    } else if (empty($password)) {
-        header("Location: index.php?error=Password is required");
+    if (empty($username) || empty($password)) {
+        header("Location:  ../login/index.php?error=Username or Password is Required");
         exit();
     } else {
         $sql = "SELECT * FROM catUsers WHERE cat_username='$username' AND cat_userpassword='$password'";
-
         $result = mysqli_query($connect, $sql);
 
         if (mysqli_num_rows($result) === 1) {
@@ -34,11 +30,11 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
                 header("Location: ../profile");
                 exit();
             } else {
-                header("Location: index.php?error=Incorect User name or password");
+                header("Location: ../login/index.php?error=Incorrect Username or Password");
                 exit();
             }
         } else {
-            header("Location: index.php?error=Incorect User name or password");
+            header("Location: ../login/index.php?error=Incorrect Username or Password");
             exit();
         }
     }

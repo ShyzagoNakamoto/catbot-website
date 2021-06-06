@@ -19,31 +19,18 @@ if (
     $password = validate($_POST['password']);
     $repeatPassword = validate($_POST['repeatPassword']);
 
-    $user_data = 'username=' . $username . '&email=' . $email;
-
-
-    if (empty($username)) {
-        header("Location: ../register/index.php?error=User Name is required&$user_data");
-        exit();
-    } else if (empty($email)) {
-        header("Location: ../register/index.php?error=Name is required&$user_data");
-        exit();
-    } else if (empty($password)) {
-        header("Location: ../register/index.php?error=Password is required&$user_data");
-        exit();
-    } else if (empty($repeatPassword)) {
-        header("Location: ../register/index.php?error=Re Password is required&$user_data");
+    if (empty($username) || empty($email) || empty($password) || empty($repeatPassword)) {
+        header("Location: ../register/index.php?error=Cannot Be Empty");
         exit();
     } else if ($password !== $repeatPassword) {
-        header("Location: ../register/index.php?error=The confirmation password  does not match&$user_data");
+        header("Location: ../register/index.php?error=The Confirmation Password Does Not Match");
         exit();
     } else {
-        $password = md5($password);
         $sql = "SELECT * FROM catUsers WHERE cat_username='$username' ";
         $result = mysqli_query($connect, $sql);
 
         if (mysqli_num_rows($result) > 0) {
-            header("Location: ../register/index.php?error=The username is taken try another&$user_data");
+            header("Location: ../register/index.php?error=Username Already Taken");
             exit();
         } else {
             $sql2 = "INSERT INTO catUsers(cat_username, cat_useremail, cat_userpassword) VALUES('$username', '$email', '$password')";
@@ -52,7 +39,7 @@ if (
                 header("Location: ../profile");
                 exit();
             } else {
-                header("Location: ../register/index.php?error=unknown error occurred&$user_data");
+                header("Location: ../register/index.php?error=Unknown Error Occurred");
                 exit();
             }
         }

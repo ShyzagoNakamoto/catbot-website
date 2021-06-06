@@ -310,6 +310,16 @@ code {
     text-decoration: none;
 }
 
+.show-login-error {
+    border: 2px solid black;
+    text-align: center;
+    padding: .5rem;
+    background: #E74C3C;
+    border-radius: .25rem;
+    box-shadow: rgb(34 34 34) 0.4rem 0.4rem 0px;
+    transition: box-shadow 0.1s ease 0s, transform 0.2s ease 0s;
+}
+
 /* Register */
 .register-pages {
     display: -webkit-box;
@@ -389,6 +399,26 @@ code {
         transform 0.2s ease 0s;
     font-size: 1.125rem;
     text-decoration: none;
+}
+
+.show-register-error {
+    border: 2px solid black;
+    text-align: center;
+    padding: .5rem;
+    background: #E74C3C;
+    border-radius: .25rem;
+    box-shadow: rgb(34 34 34) 0.4rem 0.4rem 0px;
+    transition: box-shadow 0.1s ease 0s, transform 0.2s ease 0s;
+}
+
+.show-register-success {
+    border: 2px solid black;
+    text-align: center;
+    padding: .5rem;
+    background: #2ECC71;
+    border-radius: .25rem;
+    box-shadow: rgb(34 34 34) 0.4rem 0.4rem 0px;
+    transition: box-shadow 0.1s ease 0s, transform 0.2s ease 0s;
 }
 
 /* Contacts */

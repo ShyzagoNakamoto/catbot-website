@@ -54,22 +54,13 @@
             <img src="../assets/images/logoCatBot.png" alt="">
             <h3 class="text-register-pages">Register</h1>
                 <form action="../includes/catRegister.php" method="post">
-                    <?php if (isset($_GET['error'])) { ?>
-                    <p class="error"><?php echo $_GET['error']; ?></p>
-                    <?php } ?>
-
-                    <?php if (isset($_GET['success'])) { ?>
-                    <p class="success"><?php echo $_GET['success']; ?></p>
-                    <?php } ?>
                     <div class="form-register">
                         <label class="label-register" for="username">Username</label>
-                        <input class="input-register" type="text" name="username" id="username" placeholder="catbot"
-                            value="<?php echo $_GET['username']; ?>" required>
+                        <input class="input-register" type="text" name="username" id="username" placeholder="catbot" value="<?php echo $_GET['username']; ?>" required>
                     </div>
                     <div class="form-register">
                         <label class="label-register" for="email">Email</label>
-                        <input class="input-register" type="email" name="email" id="email"
-                            placeholder="catbot@email.com" value="<?php echo $_GET['email']; ?>" required>
+                        <input class="input-register" type="email" name="email" id="email" placeholder="catbot@email.com" value="<?php echo $_GET['email']; ?>" required>
                     </div>
                     <div class="form-register">
                         <label class="label-register" for="password">Password</label>
@@ -77,9 +68,18 @@
                     </div>
                     <div class="form-register">
                         <label class="label-register" for="repeatPassword">Repeat Password</label>
-                        <input class="input-register" type="password" name="repeatPassword" id="repeatPassword"
-                            required>
+                        <input class="input-register" type="password" name="repeatPassword" id="repeatPassword" required>
                     </div>
+                    <?php if (isset($_GET['error'])) { ?>
+                        <div class="form-register">
+                            <p class="show-register-error"><?php echo $_GET['error']; ?></p>
+                        </div>
+                    <?php } ?>
+                    <?php if (isset($_GET['success'])) { ?>
+                        <div class="form-register">
+                            <p class="show-register-success"><?php echo $_GET['success']; ?></p>
+                        </div>
+                    <?php } ?>
                     <div class="form-button-register">
                         <button class="button-register" type="submit" name="register">Register</button>
                     </div>

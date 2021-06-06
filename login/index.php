@@ -62,6 +62,11 @@
                     <label class="label-login" for="password">Password</label>
                     <input class="input-login" type="password" name="password" id="password" required>
                 </div>
+                <?php if (isset($_GET['error'])) { ?>
+                <div class="form-login">
+                    <p class="show-login-error"><?php echo $_GET['error']; ?></p>
+                </div>
+                <?php } ?>
                 <div class="form-button-login">
                     <button class="button-login" type="submit" name="masuk">Go</button>
                 </div>

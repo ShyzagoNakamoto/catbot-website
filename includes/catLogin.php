@@ -27,6 +27,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             if ($row['cat_username'] === $username && $row['cat_userpassword'] === $password) {
                 $_SESSION['cat_username'] = $row['cat_username'];
                 $_SESSION['cat_userid'] = $row['cat_userid'];
+                $_SESSION['login'] = true;
                 header("Location: ../profile");
                 exit();
             } else {

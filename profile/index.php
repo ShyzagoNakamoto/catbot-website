@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+    if (!isset($_SESSION['login'])) {
+        header("Location: ../login");
+        exit;
+    } else {
+        
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,11 +53,14 @@
         </div>
         <div class="navbar-catbot-right">
             <div class="navbar-catbot-user">
-                <a class="user-box user-login" href="/login">Login</a>
-                <a class="user-box user-register" href="/register">Register</a>
+                <a class="user-box user-login" href="../logout">Logout</a>
             </div>
         </div>
     </nav>
 </body>
 
 </html>
+
+<?php
+    }
+?>
